@@ -1,0 +1,45 @@
+{
+  "name": "7ostcause",
+  "description": "Populate name(s)",
+  "author": "Abhi Bassi",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "iconDark": "icon.png",
+  "suppliesData": true,
+  "commands": [
+    {
+      "name": "Populate name(s)",
+      "description": "Insert randomly generated name(s)",
+      "identifier": "populateNames",
+      "icon": "icon.png",
+      "iconDark": "icon.png",
+      "script": "populateNames.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "Shutdown": "onShutdown",
+          "SupplyData": "onSupplyData"
+        }
+      }
+    },
+    {
+      "name": "Populate map(s)",
+      "description": "Insert randomly generated map(s)",
+      "identifier": "populateMaps",
+      "icon": "icon.png",
+      "iconDark": "icon.png",
+      "script": "populateMaps.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "Shutdown": "onShutdown",
+          "SupplyData": "onSupplyData"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "7ostcause"
+  }
+}
